@@ -4,7 +4,7 @@ import numpy as np, itertools as itt
 class ReducedDensityMatrix:
     """
     eigenstates is a matrix, with columns as eigenstates
-    subsystem_a/b are indices of the subsystems in occupation number representation
+    use pairwise permutations to sort the fockbasis into block A(first) and B(second)
     B will be traced out
     state_selection by energy
     """

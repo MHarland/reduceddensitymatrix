@@ -24,6 +24,7 @@ print rho_dim.get_entanglement_spectrum()
 print rho_dim.get_entanglement_entropy()
 
 hamiltonian = Hubbard(hop, u)
+print hamiltonian.singleParticleBasis
 plaq = GrandcanonicalEnsemble(hamiltonian, beta, mu)
 plaq.calcEigensystem()
 e0 = plaq.hamiltonian.getGroundStateEnergy()
